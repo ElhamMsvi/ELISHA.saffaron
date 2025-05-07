@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ELISHA | Iranian Saffron</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: #f5f0e6;
+      font-family: 'Tahoma', serif;
+      color: #4b2e2e;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #750000;
+      color: gold;
+      padding: 1.5rem 0;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .slogan {
+      font-size: 20px;
+      margin: 1rem 0;
+    }
+    .main-img {
+      width: 90%;
+      max-width: 600px;
+      margin: 1rem auto;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .qr {
+      margin: 2rem auto;
+    }
+    .qr img {
+      width: 160px;
+      border: 3px solid #750000;
+      border-radius: 10px;
+    }
+    .whatsapp a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: #25d366;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 18px;
+    }
+    footer {
+      margin-top: 3rem;
+      background: #4b2e2e;
+      color: white;
+      padding: 1rem;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+    form button {
+      background-color: #750000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background-color: #fff8f0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ELISHA</h1>
+    <div class="slogan">فخامة الزعفران الإيراني من قلب فارس</div>
+    <div class="slogan" dir="ltr" style="color:#444;">Iranian saffron, wrapped in splendor</div>
+  </header>
+
+  <img class="main-img" src="elisha-main-image.png" alt="Elisha saffron tin"/>
+
+  <div class="qr">
+    <p>امسح لرؤية كتيب المنتج</p>
+    <img src="qr-code.png" alt="QR brochure"/>
+  </div>
+
+  <div class="whatsapp">
+    <a href="https://wa.me/989384283062" target="_blank">تواصل عبر واتساب</a>
+  </div>
+
+  <div class="form-container">
+    <h2>ارسال سفارش آنلاین</h2>
+    <form action="https://formsubmit.co/elham@example.com" method="POST">
+      <input type="text" name="name" placeholder="نام کامل شما" required>
+      <input type="tel" name="phone" placeholder="شماره تماس" required>
+      <input type="text" name="country" placeholder="کشور مقصد" required>
+      <select name="weight">
+        <option value="1g">1 گرم</option>
+        <option value="2g">2 گرم</option>
+        <option value="3g">3 گرم</option>
+        <option value="5g">5 گرم</option>
+      </select>
+      <textarea name="message" rows="4" placeholder="توضیحات یا سوال خاص..."></textarea>
+      <button type="submit">ارسال سفارش</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 ELISHA SAFFRON
+  </footer>
+</body>
+</html>
