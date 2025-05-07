@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ELISHA | Shop</title>
+  <style>
+    body { background: #fffaf4; font-family: sans-serif; padding: 20px; color: #4b2e2e; text-align: center; }
+    h1 { color: #750000; }
+    form { max-width: 500px; margin: auto; background: #fff; padding: 20px;
+           border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+    input, select, textarea, button {
+      width: 100%; padding: 10px; margin-bottom: 10px;
+      border-radius: 5px; border: 1px solid #ccc; font-size: 1rem;
+    }
+    button {
+      background-color: #750000; color: white; font-weight: bold; cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Order Saffron</h1>
+  <form onsubmit="event.preventDefault(); sendWhatsApp();">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="phone" placeholder="Phone Number" required>
+    <input type="text" id="country" placeholder="Destination Country" required>
+    <select id="weight">
+      <option value="1g">1 gram</option>
+      <option value="2g">2 grams</option>
+      <option value="3g">3 grams</option>
+      <option value="5g">5 grams</option>
+    </select>
+    <textarea id="message" placeholder="Additional notes..."></textarea>
+    <button type="submit">Send Order via WhatsApp</button>
+  </form>
+  <script>
+    function sendWhatsApp() {
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const country = document.getElementById('country').value;
+      const weight = document.getElementById('weight').value;
+      const msg = document.getElementById('message').value;
+      const text = `Order Request\nName: ${name}\nPhone: ${phone}\nCountry: ${country}\nWeight: ${weight}\nMessage: ${msg}`;
+      const encoded = encodeURIComponent(text);
+      window.open('https://wa.me/989384283062?text=' + encoded, '_blank');
+    }
+  </script>
+</body>
+</html>
