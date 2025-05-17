@@ -1,8 +1,0 @@
-
-body { font-family: sans-serif; background: #fff3f3; color: #772206; text-align: center; padding: 20px; }
-.logo { height: 70px; margin: 10px; }
-nav a { margin: 0 10px; text-decoration: none; color: #772206; font-weight: bold; }
-nav a:hover { text-decoration: underline; }
-.product-img { width: 300px; margin-top: 20px; }
-.qr { width: 100px; margin-top: 30px; }
-footer { margin-top: 50px; font-size: 0.9em; }
